@@ -2,7 +2,7 @@
 
 Path tracking with Stanley steering control and PID speed control.
 developer : Nyoman Krisna Prebawa
-Barelang 63
+Barelang 63 - BRAIL, Politeknik Negeri Batam
 
 """
 import string
