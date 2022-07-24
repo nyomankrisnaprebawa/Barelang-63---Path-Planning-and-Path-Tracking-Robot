@@ -1,12 +1,8 @@
 """
 
-Path tracking simulation with Stanley steering control and PID speed control.
-
-author: Atsushi Sakai (@Atsushi_twi)
-
-Ref:
-    - [Stanley: The robot that won the DARPA grand challenge](http://isl.ecst.csuchico.edu/DOCS/darpa2005/DARPA%202005%20Stanley.pdf)
-    - [Autonomous Automobile Path Tracking](https://www.ri.cmu.edu/pub_files/2009/2/Automatic_Steering_Methods_for_Autonomous_Automobile_Path_Tracking.pdf)
+Path tracking with Stanley steering control and PID speed control.
+developer : Nyoman Krisna Prebawa
+Barelang 63
 
 """
 import string
@@ -233,9 +229,9 @@ def main():
     except:
         print"Failed you must check program"
 
-    pathX=[400.56145615, 550, 650, 400, 180, 300, 400]
-    pathY=[600, 650, 1020, 1100, 1020, 600, 980]
-    state = State(Posex=400, Posey=600, Poseyaw=np.radians(20.0), velocity=0.0)
+#     pathX=[400.56145615, 550, 650, 400, 180, 300, 400]
+#     pathY=[600, 650, 1020, 1100, 1020, 600, 980]
+    state = State(Posex=pose_X, Posey=pose_Y, Poseyaw=np.radians(20.0), velocity=0.0)
     cx, cy, cyaw = cubicspline(state, out_pathX, out_pathY)
     target_speed = 100 / 3.6  # [m/s]
 
