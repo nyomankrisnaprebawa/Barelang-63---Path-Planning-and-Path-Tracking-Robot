@@ -5,3 +5,4 @@ To be able to run the program, please download and install the cubic spline libr
 
 git clone https://github.com/AtsushiSakai/PythonRobotics.git
 
+ezgif.com-gif-maker.gif
